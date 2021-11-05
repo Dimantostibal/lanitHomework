@@ -2,7 +2,7 @@ package homework.com.animals;
 
 import java.util.Objects;
 
-public class Fish extends Carnivorous implements Swim{
+public class Fish extends Carnivorous implements Swim {
 
     private String name;
 
@@ -14,10 +14,10 @@ public class Fish extends Carnivorous implements Swim{
 
     @Override
     public void swim() {
-        if (hunger <= 0){
+        if (hunger <= 0) {
             System.out.println(getNameAnimal() + " ничего не делает, он хочет есть");
         } else {
-            hunger --;
+            hunger--;
             System.out.println(getNameAnimal() + " плавает");
         }
     }

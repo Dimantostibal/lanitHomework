@@ -1,6 +1,6 @@
 package homework.com.food;
 
-public class Meat extends Food{
+public class Meat extends Food {
 
     private String name;
 

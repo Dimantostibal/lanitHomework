@@ -2,7 +2,7 @@ package homework.com.animals;
 
 import java.util.Objects;
 
-public class Panther extends Carnivorous implements Run, Voice{
+public class Panther extends Carnivorous implements Run, Voice {
 
     private String name;
     private AviarySizeEnum aviarySizeEnum = AviarySizeEnum.XLARGE;
@@ -13,20 +13,20 @@ public class Panther extends Carnivorous implements Run, Voice{
 
     @Override
     public void run() {
-        if (hunger <= 0){
+        if (hunger <= 0) {
             System.out.println(getNameAnimal() + " ничего не делает, он хочет есть");
         } else {
-            hunger --;
+            hunger--;
             System.out.println(getNameAnimal() + " бегает");
         }
     }
 
     @Override
     public String voice() {
-        if (hunger <= 0){
+        if (hunger <= 0) {
             return getNameAnimal() + " ничего не делает, он хочет есть";
         } else {
-            hunger --;
+            hunger--;
             return getNameAnimal() + " говорит: Ррр-ррр";
         }
     }

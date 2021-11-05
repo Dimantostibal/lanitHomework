@@ -17,7 +17,7 @@ public class Duck extends Herbivore implements Fly, Run, Swim, Voice {
         if (hunger <= 0) {
             System.out.println(getNameAnimal() + " ничего не делает, он хочет есть");
         } else {
-            hunger --;
+            hunger--;
             System.out.println(getNameAnimal() + " летит");
         }
     }

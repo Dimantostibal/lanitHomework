@@ -1,5 +1,5 @@
 package homework.com.animals;
 
-public class WrongFoodException extends Exception{
+public class WrongFoodException extends Exception {
 
 }

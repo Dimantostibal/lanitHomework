@@ -13,7 +13,7 @@ public class Aviary<T extends Animal> {
         this.aviarySizeEnum = aviarySizeEnum;
     }
 
-    public void addAnimal(T animal){
+    public void addAnimal(T animal) {
         if (aviarySizeEnum.equals(animal.getAviarySizeEnum())) {
             animalHashMap.put(animal.getNameAnimal(), animal);
             System.out.println(animal.getNameAnimal() + " добавлен в вольер");
@@ -27,12 +27,12 @@ public class Aviary<T extends Animal> {
         return animalHashMap.get(animalName);
     }
 
-    public void deleteAnimal(String animalName){
+    public void deleteAnimal(String animalName) {
         animalHashMap.remove(animalName);
         System.out.println(animalName + " удален из вольера");
     }
 
-    public void getAllAnimals(){
+    public void getAllAnimals() {
         System.out.println("Сейчас в вольере " + animalHashMap.values());
     }
 }

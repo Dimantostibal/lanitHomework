@@ -13,20 +13,20 @@ public class Horse extends Herbivore implements Run, Voice {
 
     @Override
     public void run() {
-        if (hunger <= 0){
+        if (hunger <= 0) {
             System.out.println(getNameAnimal() + " ничего не делает, он хочет есть");
         } else {
-            hunger --;
+            hunger--;
             System.out.println(getNameAnimal() + " скачет");
         }
     }
 
     @Override
     public String voice() {
-        if (hunger <= 0){
+        if (hunger <= 0) {
             return getNameAnimal() + " ничего не делает, он хочет есть";
         } else {
-            hunger --;
+            hunger--;
             return getNameAnimal() + " говорит: Иго-го";
         }
     }

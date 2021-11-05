@@ -109,7 +109,7 @@ public class Zoo {
         pool[0] = fish;
         pool[1] = duck;
 
-        for (int i = 0; i < pool.length; i++){
+        for (int i = 0; i < pool.length; i++) {
             pool[i].swim();
         }
 
