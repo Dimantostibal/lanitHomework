@@ -4,19 +4,19 @@ import homework.com.food.Food;
 
 public abstract class Animal {
 
-    String name;
-    public final int satiety = 5; // Сколько получит животное единиц сытости когда поес.
-    public int hunger = satiety; // Единица сытости
+    protected final int satiety = 5; // Сколько получит животное единиц сытости когда поес.
+    protected int hunger = satiety; // Единица сытости
+    protected AviarySizeEnum aviarySizeEnum;
 
-    public abstract int eat(Food food);
+    public abstract int eat(Food food) throws WrongFoodException;
 
     public abstract String getNameAnimal();
 
-    public String getName() {
-        return name;
+    public void setAviarySizeEnum(AviarySizeEnum aviarySizeEnum) {
+        this.aviarySizeEnum = aviarySizeEnum;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public AviarySizeEnum getAviarySizeEnum() {
+        return aviarySizeEnum;
     }
 }
